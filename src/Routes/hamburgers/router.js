@@ -1,7 +1,7 @@
 /* 
-- A GET endpoint /hamburgers to have a full list of hamburgers available. Every hamburger object should also include a "quantity" element specifying how many hamburger of that type can be served
-- A POST endpoint /hamburgers to add a new hamburger to the menu.
-- A PATCH endpoint to UPDATE info about your hamburgers: The body of the request should be one or multiple elements to be updated or added to an existing resource
+- ✔ A GET endpoint /hamburgers to have a full list of hamburgers available. Every hamburger object should also include a "quantity" element specifying how many hamburger of that type can be served
+- ✔ A POST endpoint /hamburgers to add a new hamburger to the menu.
+- ❔A PATCH endpoint to UPDATE info about your hamburgers: The body of the request should be one or multiple elements to be updated or added to an existing resource
 */
 const express = require("express");
 const hamburgerRouter = express.Router();
@@ -22,7 +22,7 @@ let hamburgers = [
 			"onion",
 			"Veggies",
 		],
-		quantity: 4,
+		availability: 25,
 	},
 	{
 		id: 2,
@@ -39,7 +39,7 @@ let hamburgers = [
 			"tomato",
 			"cranberry sauce",
 		],
-		quantity: 4,
+		availability: 25,
 	},
 	{
 		id: 3,
@@ -58,7 +58,7 @@ let hamburgers = [
 			"onion",
 			"gerkins",
 		],
-		quantity: 4,
+		availability: 25,
 	},
 	{
 		id: 4,
@@ -78,7 +78,7 @@ let hamburgers = [
 			"onion",
 			"gerkins",
 		],
-		quantity: 4,
+		availability: 25,
 	},
 ];
 

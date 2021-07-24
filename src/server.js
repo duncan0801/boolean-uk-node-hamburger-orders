@@ -15,11 +15,11 @@ const port = 4000
 app.use(morgan("dev"))
 app.use(express.json())
 
-
-
 //Routing
 app.use("/hamburgers", hamburgerRouter)
 //use the hamburgerRouter to handle endpoints that start with /hamburgers
+app.use("/orders", orderRouter)
+//use the ordersRouter to handle endpoints that start with /orders
 
 app.listen(port, (req, res) => {
     console.log(`Server running on http://localhost:${port}`)
